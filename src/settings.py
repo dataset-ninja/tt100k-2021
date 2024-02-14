@@ -13,37 +13,39 @@ from dataset_tools.templates import (
 ##################################
 # * Before uploading to instance #
 ##################################
-PROJECT_NAME: str = None
-PROJECT_NAME_FULL: str = None
+PROJECT_NAME: str = "Tsinghua Tencent 2021"
+PROJECT_NAME_FULL: str = "Tsinghua Tencent 100K 2021 Dataset"
 HIDE_DATASET = True  # set False when 100% sure about repo quality
 
 ##################################
 # * After uploading to instance ##
 ##################################
-LICENSE: License = None
-APPLICATIONS: List[Union[Industry, Domain, Research]] = None
-CATEGORY: Category = None
+LICENSE: License = License.CC_BY_NC_2_0()
+APPLICATIONS: List[Union[Industry, Domain, Research]] = [Industry.Automotive()]
+CATEGORY: Category = Category.SelfDriving()
 
-CV_TASKS: List[CVTask] = None
-ANNOTATION_TYPES: List[AnnotationType] = None
+CV_TASKS: List[CVTask] = [CVTask.ObjectDetection()]
+ANNOTATION_TYPES: List[AnnotationType] = [AnnotationType.ObjectDetection()]
 
 RELEASE_DATE: Optional[str] = None  # e.g. "YYYY-MM-DD"
 if RELEASE_DATE is None:
-    RELEASE_YEAR: int = None
+    RELEASE_YEAR: int = 2021
 
-HOMEPAGE_URL: str = None
+HOMEPAGE_URL: str = "https://cg.cs.tsinghua.edu.cn/traffic-sign/"
 # e.g. "https://some.com/dataset/homepage"
 
-PREVIEW_IMAGE_ID: int = None
+PREVIEW_IMAGE_ID: int = 14001330
 # This should be filled AFTER uploading images to instance, just ID of any image.
 
-GITHUB_URL: str = None
+GITHUB_URL: str = "https://github.com/dataset-ninja/tt100k-2021"
 # URL to GitHub repo on dataset ninja (e.g. "https://github.com/dataset-ninja/some-dataset")
 
 ##################################
 ### * Optional after uploading ###
 ##################################
-DOWNLOAD_ORIGINAL_URL: Optional[Union[str, dict]] = None
+DOWNLOAD_ORIGINAL_URL: Optional[Union[str, dict]] = (
+    "https://cg.cs.tsinghua.edu.cn/traffic-sign/tt100k_2021.zip"
+)
 # Optional link for downloading original dataset (e.g. "https://some.com/dataset/download")
 
 CLASS2COLOR: Optional[Dict[str, List[str]]] = None
@@ -51,16 +53,40 @@ CLASS2COLOR: Optional[Dict[str, List[str]]] = None
 
 # If you have more than the one paper, put the most relatable link as the first element of the list
 # Use dict key to specify name for a button
-PAPER: Optional[Union[str, List[str], Dict[str, str]]] = None
+PAPER: Optional[Union[str, List[str], Dict[str, str]]] = (
+    "https://cg.cs.tsinghua.edu.cn/traffic-sign/0682.pdf"
+)
 BLOGPOST: Optional[Union[str, List[str], Dict[str, str]]] = None
-REPOSITORY: Optional[Union[str, List[str], Dict[str, str]]] = {"GitHub":"some_link_to_repo_if_exists"}
+REPOSITORY: Optional[Union[str, List[str], Dict[str, str]]] = None
 
 CITATION_URL: Optional[str] = None
-AUTHORS: Optional[List[str]] = None
-AUTHORS_CONTACTS: Optional[List[str]] = None
+AUTHORS: Optional[List[str]] = [
+    "Zhe Zhu",
+    "Dun Liang",
+    "Songhai Zhang",
+    "Xiaolei Huang",
+    "Baoli Li",
+    "Shimin Hu",
+]
+AUTHORS_CONTACTS: Optional[List[str]] = [
+    "ajex1988@gmail.com",
+    "randonlang@gmail.com",
+    "shz@tsinghua.edu.cn",
+    "huang@cse.lehigh.edu",
+    "barneyli@tencent.com",
+    "shimin@tsinghua.edu.cn",
+]
 
-ORGANIZATION_NAME: Optional[Union[str, List[str]]] = None
-ORGANIZATION_URL: Optional[Union[str, List[str]]] = None
+ORGANIZATION_NAME: Optional[Union[str, List[str]]] = [
+    "Tsinghua University Beijing, China",
+    "Lehigh University Bethlehem, USA",
+    "Tencent Beijing, China",
+]
+ORGANIZATION_URL: Optional[Union[str, List[str]]] = [
+    "https://www.tsinghua.edu.cn/en/",
+    "https://www2.lehigh.edu/",
+    "https://www.oma.com/projects/tencent-beijing-headquarters",
+]
 
 # Set '__PRETEXT__' or '__POSTTEXT__' as a key with string value to add custom text. e.g. SLYTAGSPLIT = {'__POSTTEXT__':'some text}
 SLYTAGSPLIT: Optional[Dict[str, Union[List[str], str]]] = None
