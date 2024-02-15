@@ -14,7 +14,7 @@ Presently, Tencent Street Views covers about 300 Chinese cities and the road net
 benchmark to correctly determine its classes: partially occluded or blurred traffic signs can be recognized from their occurrences in previous or subsequent shots. To create the benchmark images, the top 25% and bottom 25% of each panorama image was cropped off (as unlikely to contain any signs), and the remainder sliced vertically into 4 sub-images. The authors chose 10 regions from 5 different cities in China (including both downtown regions and suburbs for each city)
 and downloaded 100000 panoramas from the Tencent Data Center.
 
-<img src="https://github.com/dataset-ninja/tt100k-2021/assets/120389559/f1768a87-42fe-4592-884f-d81fa074d39d" alt="image" width="800">
+<img src="https://github.com/dataset-ninja/tt100k-2021/assets/120389559/f1768a87-42fe-4592-884f-d81fa074d39d" alt="image" width="500">
 
 <span style="font-size: smaller; font-style: italic;">The authors benchmark contains 100000 high resolution images in which all traffic signs are annotated with class label, bounding boxes, and pixel masks. The images are cut from from Tencent Street Views which contain realistic views traffic signs in environments.</span>
 
