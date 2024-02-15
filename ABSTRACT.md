@@ -1,5 +1,9 @@
 The authors have created a large traffic-sign benchmark from 100000 Tencent Street View panoramas, called **Tsinghua Tencent 100K 2021 Dataset**. It provides 100000 images containing 30000 traffic-sign instances. These images cover large variations in illuminance and weather conditions. Each traffic sign in the benchmark is annotated with a class label and bounding box.
 
+Note, similar **Tsinghua Tencent 100K 2021 Dataset** datasets are also available on the [DatasetNinja.com](https://datasetninja.com/):
+
+- [Tsinghua Tencent 100K 2016 Dataset](https://datasetninja.com/tt100k-2016)
+
 ## Motivation
 
 Scene understanding is the ultimate goal of computer vision; detecting and classifying objects of various sizes in the scene is an important sub-task. Recently, deep learning methods have shown superior performance for many tasks such as image classification and speech recognition. Traffic signs may be divided into different categories according to function, and in each category they may be further divided into subclasses with similar generic shape and appearance but different details. This suggests traffic sign recognition should be carried out as a two-phase task: detection followed by classification. The detection step uses shared information to suggest bounding boxes that may contain traffic-signs in a specific category, while the classification step uses differences to determine which specific kind of sign is present (if any).  Current methods achieve perfect or near perfect results for detection and classification tasks, with 100% recall and precision for detection and 99.67% precision for classification. While it may appear that these are thus solved problems, unfortunately, this benchmark data is not representative of that encountered in real tasks. 
