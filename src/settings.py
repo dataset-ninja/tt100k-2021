@@ -78,9 +78,9 @@ AUTHORS_CONTACTS: Optional[List[str]] = [
 ]
 
 ORGANIZATION_NAME: Optional[Union[str, List[str]]] = [
-    "Tsinghua University Beijing, China",
+    "Tsinghua University, China",
     "Lehigh University Bethlehem, USA",
-    "Tencent Beijing, China",
+    "Tencent, China",
 ]
 ORGANIZATION_URL: Optional[Union[str, List[str]]] = [
     "https://www.tsinghua.edu.cn/en/",
