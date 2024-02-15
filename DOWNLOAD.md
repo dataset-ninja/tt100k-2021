@@ -1,6 +1,6 @@
 Dataset **Tsinghua Tencent 2021** can be downloaded in [Supervisely format](https://developer.supervisely.com/api-references/supervisely-annotation-json-format):
 
- [Download](Set 'HIDE_DATASET=False' to generate download link)
+ [Download](https://assets.supervisely.com/supervisely-supervisely-assets-public/teams_storage/5/A/Og/FE3XzHWlDO7wHG9cDdEW8hzTcBxwCuOWxZwJKlk7zxRJJv9CGnou2Zow8saYMK3ErbcIVXeamXwzXk6Wv0yTFBaflYkLrdWPd4VC4ShAYzZZEcpsuOsaQO7IoOtY.tar)
 
 As an alternative, it can be downloaded with *dataset-tools* package:
 ``` bash
